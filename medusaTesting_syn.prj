@@ -1,0 +1,81 @@
+#-- Synopsys, Inc.
+#-- Project file C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\medusaTesting_syn.prj
+#project files
+
+add_file -verilog -lib work "FPGA1/src/I2C_Control_StartUp.v" 
+add_file -verilog -lib work "FPGA1/src/I2C_FSM.v" 
+add_file -verilog -lib work "FPGA1/src/I2C_Interpreter.v" 
+add_file -verilog -lib work "FPGA1/src/I2C_Register.v" 
+add_file -verilog -lib work "FPGA1/src/I2C_Register_read.v" 
+add_file -verilog -lib work "FPGA1/src/I2C_Register_sys.v" 
+add_file -verilog -lib work "FPGA1/src/I2C_addr0_reg.v" 
+add_file -verilog -lib work "FPGA1/src/I2C_addr1_reg.v" 
+add_file -verilog -lib work "FPGA1/src/I2C_top_level.v" 
+add_file -verilog -lib work "FPGA1/src/RX_Shift_Register.v" 
+add_file -verilog -lib work "FPGA1/src/TX_Shift_Register.v" 
+add_file -verilog -lib work "FPGA1/src/cemf_module_64ch_ctrl.v" 
+add_file -verilog -lib work "FPGA1/src/cemf_module_64ch_fsm_average.v" 
+add_file -verilog -lib work "FPGA1/src/cemf_module_64ch_main.v" 
+add_file -verilog -lib work "FPGA1/src/command_reg.v" 
+add_file -verilog -lib work "FPGA1/src/mux_tdc.v" 
+add_file -verilog -lib work "FPGA1/src/ram_module.v" 
+add_file -verilog -lib work "FPGA1/src/ram_module_top.v" 
+add_file -verilog -lib work "FPGA1/src/spi_top.v" 
+add_file -verilog -lib work "FPGA1/src/tdc_spi.v" 
+add_file -verilog -lib work "FPGA1/src/tdc_spi_conf.v" 
+add_file -verilog -lib work "FPGA1/src/tdc_spi_op.v" 
+add_file -verilog -lib work "FPGA1/src/tdc_spi_read.v" 
+add_file -verilog -lib work "FPGA1/src/top_cemf_module_64ch_reg.v" 
+add_file -verilog -lib work "FPGA1/src/serializer_mod.v" 
+add_file -constraint -lib work "FPGA1/constraint/time_constrain.sdc"
+#implementation: "medusaTesting_Implmnt"
+impl -add medusaTesting_Implmnt -type fpga
+
+#implementation attributes
+set_option -vlog_std v2001
+set_option -project_relative_includes 1
+
+#device options
+set_option -technology SBTiCE40
+set_option -part iCE40LP8K
+set_option -package CM81
+set_option -speed_grade 
+set_option -part_companion ""
+
+#compilation/mapping options
+
+# mapper_options
+set_option -frequency auto
+set_option -write_verilog 0
+set_option -write_vhdl 0
+
+# Silicon Blue iCE40
+set_option -maxfan 10000
+set_option -disable_io_insertion 0
+set_option -pipe 1
+set_option -retiming 0
+set_option -update_models_cp 0
+set_option -fixgatedclocks 2
+set_option -fixgeneratedclocks 0
+
+# NFilter
+set_option -popfeed 0
+set_option -constprop 0
+set_option -createhierarchy 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_format "edif"
+project -result_file ./medusaTesting_Implmnt/medusaTesting.edf
+project -log_file "./medusaTesting_Implmnt/medusaTesting.srr"
+impl -active medusaTesting_Implmnt
+project -run synthesis -clean

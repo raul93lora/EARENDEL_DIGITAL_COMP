@@ -1,0 +1,5 @@
+
+#1001 : create_clock -period 62.50 -name clock [get_ports clock]
+# line 12 in c:/users/raul.lora/documents/proyectotestraul/medusatesting/medusatesting/fpga1/constraint/time_constrain.sdc
+
+create_clock -period {62.500} -name {clock} [get_ports {clock}]

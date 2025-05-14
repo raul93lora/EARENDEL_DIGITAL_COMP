@@ -1,0 +1,2 @@
+@E: CG426 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\serializer_mod.v":88:4:88:21|Assignment target electr_config_test must be of type reg or genvar
+

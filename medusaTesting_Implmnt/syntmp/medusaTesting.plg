@@ -1,0 +1,23 @@
+@P:  Worst Slack : 20.703
+@P:  cemf_module_64ch_main|scl - Estimated Frequency : 74.1 MHz
+@P:  cemf_module_64ch_main|scl - Requested Frequency : 1.0 MHz
+@P:  cemf_module_64ch_main|scl - Estimated Period : 13.502
+@P:  cemf_module_64ch_main|scl - Requested Period : 1000.000
+@P:  cemf_module_64ch_main|scl - Slack : 493.249
+@P:  clock - Estimated Frequency : 47.4 MHz
+@P:  clock - Requested Frequency : 16.0 MHz
+@P:  clock - Estimated Period : 21.094
+@P:  clock - Requested Period : 62.500
+@P:  clock - Slack : 20.703
+@P:  System - Estimated Frequency : 1.1 MHz
+@P:  System - Requested Frequency : 1.0 MHz
+@P:  System - Estimated Period : 941.019
+@P:  System - Requested Period : 1000.000
+@P:  System - Slack : 58.981
+@P: cemf_module_64ch_main Part : ice40lp8kcm81
+@P: cemf_module_64ch_main I/O primitives : 29
+@P: cemf_module_64ch_main I/O Register bits : 0
+@P: cemf_module_64ch_main Register bits (Non I/O) : 834 (10%)
+@P: cemf_module_64ch_main Block Rams : 8 of 32 (25%)
+@P: cemf_module_64ch_main Total Luts : 1460 (19%)
+@P:  CPU Time : 0h:00m:12s

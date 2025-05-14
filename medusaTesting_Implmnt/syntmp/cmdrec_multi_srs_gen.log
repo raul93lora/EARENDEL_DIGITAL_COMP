@@ -1,0 +1,7 @@
+C:\lscc\iCEcube2.2020.12\synpbase\bin64\syn_nfilter.exe  -link  -multisrs  C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\medusaTesting_Implmnt\synwork\medusaTesting_comp.srs  -osyn  C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\medusaTesting_Implmnt\synwork\medusaTesting_mult.srs  -log  C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\medusaTesting_Implmnt\synlog\medusaTesting_multi_srs_gen.srr 
+rc:0 success:1 runtime:0
+file:C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\medusaTesting_Implmnt\synwork\medusaTesting_comp.srs|io:i|time:1743428074|size:88658|exec:0
+file:C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\medusaTesting_Implmnt\synwork\medusaTesting_mult.srs|io:o|time:1743428075|size:7909|exec:0
+file:C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\medusaTesting_Implmnt\synlog\medusaTesting_multi_srs_gen.srr|io:o|time:1743428075|size:980|exec:0
+file:C:\lscc\iCEcube2.2020.12\synpbase\bin\syn_nfilter.exe|io:i|time:1731922776|size:3128320|exec:1
+file:C:\lscc\iCEcube2.2020.12\synpbase\bin64\syn_nfilter.exe|io:i|time:1731922778|size:3947520|exec:1

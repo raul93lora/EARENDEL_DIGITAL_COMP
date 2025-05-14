@@ -1,0 +1,117 @@
+* ******************************************************************************
+
+* iCEcube Report
+
+* Version:            2020.12.27943
+
+* Build Date:         Dec  9 2020 17:31:51
+
+* File Generated:     Mar 31 2025 15:37:37
+
+* Purpose:            General info of design implementation
+
+* Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+* ******************************************************************************
+
+Synthesis/Placement Summary:
+----------------------------
+    Status:  Successful
+    Runtime: 4 seconds
+
+Device Info:
+------------
+    Device Family: iCE40
+    Device:        iCE40LP8K
+    Package:       CM81
+
+Design statistics:
+------------------
+    FFs:                  834
+    LUTs:                 1729
+    RAMs:                 8
+    IOBs:                 29
+    GBs:                  8
+    PLLs:                 0
+    Warm Boots:           0
+
+Logic Resource Utilization:
+---------------------------
+    Total Logic Cells: 1733/7680
+        Combinational Logic Cells: 899      out of   7680      11.7057%
+        Sequential Logic Cells:    834      out of   7680      10.8594%
+        Logic Tiles:               309      out of   960       32.1875%
+    Registers: 
+        Logic Registers:           834      out of   7680      10.8594%
+        IO Registers:              0        out of   1280      0
+    Block RAMs:                    8        out of   32        25%
+    Warm Boots:                    0        out of   1         0%
+    Pins:
+        Input Pins:                6        out of   63        9.52381%
+        Output Pins:               22       out of   63        34.9206%
+        InOut Pins:                1        out of   63        1.5873%
+    Global Buffers:                8        out of   8         100%
+    PLLs:                          0        out of   1         0%
+
+IO Bank Utilization:
+--------------------
+    Bank 3: 12       out of   18        66.6667%
+    Bank 1: 2        out of   15        13.3333%
+    Bank 0: 14       out of   17        82.3529%
+    Bank 2: 1        out of   13        7.69231%
+
+Detailed I/O Info:
+------------------
+    Input Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function                                Signal Name         
+    ----------  ---------  -----------  -------  -------  -----------                                -----------         
+    A7          Input      SB_LVCMOS    No       0        Simple Input                               rst_n               
+    B2          Input      SB_LVCMOS    No       3        Simple Input                               clock               
+    B4          Input      SB_LVCMOS    No       0        Simple Input                               sync_50hz           
+    B5          Input      SB_LVCMOS    No       0        Simple Input                               sdin1               
+    C4          Input      SB_LVCMOS    No       0        Simple Input                               sdin0               
+    E5          Input      SB_LVCMOS    No       0        Simple Input                               scl                 
+
+    Output Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function                                Signal Name         
+    ----------  ---------  -----------  -------  -------  -----------                                -----------         
+    A1          Output     SB_LVCMOS    No       0        Simple Output                              csb0                
+    A2          Output     SB_LVCMOS    No       0        Simple Output                              sclk0               
+    A3          Output     SB_LVCMOS    No       0        Simple Output                              dout1               
+    A6          Output     SB_LVCMOS    No       0        Simple Output                              frame_sync          
+    A8          Output     SB_LVCMOS    No       0        Simple Output                              enable_config       
+    A9          Output     SB_LVCMOS    No       1        Simple Output                              serial_out_testing  
+    B3          Output     SB_LVCMOS    No       0        Simple Output                              elec_config_out     
+    B6          Output     SB_LVCMOS    No       0        Simple Output                              start0              
+    B7          Output     SB_LVCMOS    No       0        Simple Output                              start1              
+    B8          Output     SB_LVCMOS    No       0        Simple Output                              stop0               
+    C2          Output     SB_LVCMOS    No       3        Simple Output                              s3                  
+    C3          Output     SB_LVCMOS    No       3        Simple Output                              stop_fpga2          
+    C9          Output     SB_LVCMOS    No       1        Simple Output                              stop1               
+    D2          Output     SB_LVCMOS    No       3        Simple Output                              s2                  
+    D3          Output     SB_LVCMOS    No       3        Simple Output                              dout0               
+    E1          Output     SB_LVCMOS    No       3        Simple Output                              next_sequence       
+    E2          Output     SB_LVCMOS    No       3        Simple Output                              s1                  
+    E4          Output     SB_LVCMOS    No       3        Simple Output                              sclk1               
+    F3          Output     SB_LVCMOS    No       3        Simple Output                              mcu_sclk            
+    G1          Output     SB_LVCMOS    No       3        Simple Output                              mcu_data            
+    H1          Output     SB_LVCMOS    No       2        Simple Output                              s0                  
+    H2          Output     SB_LVCMOS    No       3        Simple Output                              csb1                
+
+    Inoutput Pins: 
+    Pin Number  Direction  IO Standard  Pull Up  IO Bank  IO Function                                Signal Name         
+    ----------  ---------  -----------  -------  -------  -----------                                -----------         
+    C1          InOut      SB_LVCMOS    No       3        Simple Input Output Tristatable by Enable  sda                 
+
+Detailed Global Buffer Info:
+----------------------------
+    Buffer Number  IO Bank  Driven By  Fanout  Signal Name                                                                                              
+    -------------  -------  ---------  ------  -----------                                                                                              
+    5              2                   627     clock_c_g                                                                                                
+    0              2                   46      scl_c_g                                                                                                  
+    7              1                   32      I2C_top_level_inst1.I2C_Interpreter_inst.un40_0_g                                                        
+    3              3                   32      cemf_module_64ch_ctrl_inst1.top_cemf_module_64ch_reg_inst.I2C_Register_conf5.n_data_system_o_1_sqmuxa_g  
+    4              0                   676     rst_n_c_i_g                                                                                              
+    1              0                   32      cemf_module_64ch_ctrl_inst1.top_cemf_module_64ch_reg_inst.I2C_Register_conf4.n_data_system_o_1_sqmuxa_g  
+    6              3                   116     I2C_top_level_inst1.c_state4_0_i_g                                                                       
+    2              1                   4       s_sda_i_g                                                                                                

@@ -1,0 +1,663 @@
+Selecting top level module cemf_module_64ch_main
+@N: CG364 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v":501:7:501:11|Synthesizing module SB_IO in library work.
+
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":1:7:1:34|Synthesizing module cemf_module_64ch_fsm_average in library work.
+
+	N_ELECTRODES=32'b00000000000000000000000010000001
+	idle=6'b000000
+	conf_a_st=6'b000001
+	wait_conf_a=6'b000010
+	conf_b_st=6'b000011
+	wait_conf_b=6'b000100
+	end_conf_st=6'b000101
+	init_st=6'b000110
+	next_seq_st=6'b000111
+	wait_st_1=6'b001000
+	wait_read_op1=6'b001001
+	read_op1=6'b001010
+	wait_st_3=6'b001011
+	wait_st_4=6'b001100
+	wait_read_op4=6'b001101
+	read_op4=6'b001110
+	wait_st_5=6'b001111
+	wait_st_6=6'b010000
+	wait_for_sr=6'b010001
+	start_st=6'b010010
+	sync_st=6'b010011
+	first_channel=6'b010100
+	normal_channel=6'b010101
+	en_counters=6'b010110
+	wait_st=6'b010111
+	start_gen_st=6'b011000
+	wait_cemf_st=6'b011001
+	stop_gen_st=6'b011010
+	update_addr=6'b011011
+	end_st=6'b011100
+	end_st_2=6'b011101
+	end_st_3=6'b011110
+	end_st_4=6'b011111
+	last_read_st=6'b010000
+	end_st_5=6'b100001
+	end_st_6=6'b100010
+	default_st=6'bxxxxxx
+	ADDR_IDLE=16'b0000000000000000
+	ADDR_START=16'b0000000000001000
+   Generated name = cemf_module_64ch_fsm_average_Z1
+
+@W: CG296 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":211:10:244:3|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":263:13:263:19|Referenced variable c_frame is not in sensitivity list.
+@W: CG290 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":272:17:272:27|Referenced variable c_cntrl_tdc is not in sensitivity list.
+@W: CG290 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":270:19:270:31|Referenced variable c_elec_config is not in sensitivity list.
+@W: CG290 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":522:6:522:7|Referenced variable sr_finish is not in sensitivity list.
+@W: CG290 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":429:26:429:38|Referenced variable prdata_config is not in sensitivity list.
+@W: CG290 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":656:22:656:38|Referenced variable cemf_cycles_total is not in sensitivity list.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":173:1:173:6|Pruning unused register c_elec_config[128:0]. Make sure that there are no unused intermediate registers.
+@W: CL118 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|Latch generated from always block for signal enable_sr_out; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|Latch generated from always block for signal time_out[15:0]; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|Latch generated from always block for signal delay_cemf[7:0]; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|Latch generated from always block for signal cemf_cycles[7:0]; possible missing assignment in an if or case statement.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 0 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 1 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 2 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 3 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 4 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 5 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 6 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 7 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 8 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 9 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 10 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 11 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 12 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 13 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 14 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 15 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 16 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 17 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 18 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 19 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 20 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 21 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 22 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 23 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 24 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 25 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 26 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 27 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 28 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 29 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 30 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 31 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 32 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 33 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 34 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 35 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 36 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 37 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 38 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 39 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 40 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 41 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 42 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 43 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 44 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 45 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 46 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 47 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 48 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 49 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 50 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 51 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 52 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 53 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 54 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 55 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 56 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 57 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 58 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 59 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 60 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 61 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 62 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 63 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 64 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 65 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 66 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 67 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 68 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 69 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 70 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 71 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 72 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 73 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 74 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 75 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 76 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 77 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 78 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 79 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 80 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 81 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 82 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 83 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 84 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 85 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 86 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 87 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 88 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 89 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 90 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 91 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 92 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 93 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 94 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 95 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 96 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 97 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 98 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 99 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 100 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 101 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 102 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 103 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 104 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 105 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 106 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 107 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 108 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 109 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 110 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 111 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 112 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 113 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 114 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 115 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 116 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 117 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 118 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 119 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 120 of elec_config_aux[128:0] assign 1, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 121 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 122 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 123 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 124 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 125 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 126 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 127 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL208 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|All reachable assignments to bit 128 of elec_config_aux[128:0] assign 0, register removed by optimization.
+@W: CL118 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|Latch generated from always block for signal deter_time[21:0]; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|Latch generated from always block for signal seq[6:0]; possible missing assignment in an if or case statement.
+@W: CL118 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":276:3:276:6|Latch generated from always block for signal sync_config; possible missing assignment in an if or case statement.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_conf.v":1:7:1:18|Synthesizing module tdc_spi_conf in library work.
+
+@W: CG296 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_conf.v":113:10:116:2|Incomplete sensitivity list; assuming completeness. Make sure all referenced variables in message CG290 are included in the sensitivity list.
+@W: CG290 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_conf.v":334:12:334:26|Referenced variable data_interrupts is not in sensitivity list.
+@W: CG290 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_conf.v":150:12:150:22|Referenced variable data_config is not in sensitivity list.
+@W: CG290 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_conf.v":196:12:196:25|Referenced variable data_coarseovf is not in sensitivity list.
+@W: CG290 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_conf.v":242:12:242:25|Referenced variable data_clkctrovf is not in sensitivity list.
+@W: CG290 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_conf.v":288:12:288:27|Referenced variable data_clkstopmask is not in sensitivity list.
+@W: CL118 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_conf.v":134:2:134:5|Latch generated from always block for signal data[23:0]; possible missing assignment in an if or case statement.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_op.v":1:7:1:16|Synthesizing module tdc_spi_op in library work.
+
+@W: CG360 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_op.v":40:5:40:7|Removing wire sck, as there is no assignment to it.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_op.v":52:0:52:5|Optimizing register bit ser_data[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_op.v":52:0:52:5|Pruning register bit 0 of ser_data[23:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_read.v":1:7:1:18|Synthesizing module tdc_spi_read in library work.
+
+@N: CG179 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_read.v":87:19:87:28|Removing redundant assignment.
+@W: CG360 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_read.v":65:5:65:7|Removing wire sck, as there is no assignment to it.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi.v":1:7:1:13|Synthesizing module tdc_spi in library work.
+
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\spi_top.v":1:7:1:13|Synthesizing module spi_top in library work.
+
+@W: CG360 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\spi_top.v":53:5:53:14|Removing wire pwrite_reg, as there is no assignment to it.
+@W: CG360 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\spi_top.v":53:17:53:24|Removing wire psel_reg, as there is no assignment to it.
+@W: CG360 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\spi_top.v":53:27:53:37|Removing wire penable_reg, as there is no assignment to it.
+@W: CG360 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\spi_top.v":54:11:54:18|Removing wire addr_reg, as there is no assignment to it.
+@W: CG360 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\spi_top.v":55:12:55:21|Removing wire pwdata_reg, as there is no assignment to it.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\mux_tdc.v":1:7:1:13|Synthesizing module mux_tdc in library work.
+
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":1:7:1:16|Synthesizing module ram_module in library work.
+
+@N: CL134 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":35:0:35:5|Found RAM mem, depth=64, width=32
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[31]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[30]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[29]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[28]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[27]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[26]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[25]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[24]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[23]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[22]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[21]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[20]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[19]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[18]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[17]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[16]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[15]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[14]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[13]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[12]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[11]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[10]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[9]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[8]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[7]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[6]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[5]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[4]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[3]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[2]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[1]. Make sure that there are no unused intermediate registers.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":41:0:41:5|Pruning unused register rdata_cl[0]. Make sure that there are no unused intermediate registers.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":43:6:43:33|Sharing sequential element rdata_tri_enable. Add a syn_preserve attribute to the element to prevent sharing.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module_top.v":1:7:1:20|Synthesizing module ram_module_top in library work.
+
+@W: CS263 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module_top.v":110:13:110:23|Port-width mismatch for port raddr. The port definition is 8 bits, but the actual port connection bit width is 6. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module_top.v":114:13:114:23|Port-width mismatch for port waddr. The port definition is 8 bits, but the actual port connection bit width is 6. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module_top.v":123:13:123:23|Port-width mismatch for port raddr. The port definition is 8 bits, but the actual port connection bit width is 6. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module_top.v":127:13:127:23|Port-width mismatch for port waddr. The port definition is 8 bits, but the actual port connection bit width is 6. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module_top.v":136:13:136:23|Port-width mismatch for port raddr. The port definition is 8 bits, but the actual port connection bit width is 6. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module_top.v":140:13:140:23|Port-width mismatch for port waddr. The port definition is 8 bits, but the actual port connection bit width is 6. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module_top.v":150:13:150:23|Port-width mismatch for port raddr. The port definition is 8 bits, but the actual port connection bit width is 6. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module_top.v":154:13:154:23|Port-width mismatch for port waddr. The port definition is 8 bits, but the actual port connection bit width is 6. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module_top.v":163:13:163:23|Port-width mismatch for port raddr. The port definition is 8 bits, but the actual port connection bit width is 6. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module_top.v":167:13:167:23|Port-width mismatch for port waddr. The port definition is 8 bits, but the actual port connection bit width is 6. Adjust either the definition or the instantiation of this port.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":1:7:1:23|Synthesizing module I2C_Register_read in library work.
+
+	ADDR=16'b0000000000000000
+	DATA=32'b00000000000000000000000000000000
+	DATA_BUS_WIDTH=32'b00000000000000000000000000100000
+	ADDRESS_BUS_WIDTH=32'b00000000000000000000000000010000
+   Generated name = I2C_Register_read_0_0_32s_16s
+
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":1:7:1:23|Synthesizing module I2C_Register_read in library work.
+
+	ADDR=16'b0000000000000001
+	DATA=32'b00000000000000000000000000000000
+	DATA_BUS_WIDTH=32'b00000000000000000000000000100000
+	ADDRESS_BUS_WIDTH=32'b00000000000000000000000000010000
+   Generated name = I2C_Register_read_1_0_32s_16s
+
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_sys.v":1:7:1:22|Synthesizing module I2C_Register_sys in library work.
+
+	ADDR=16'b0000000000000010
+	DATA=32'b00000000000000000000000000000000
+	DATA_BUS_WIDTH=32'b00000000000000000000000000100000
+	ADDRESS_BUS_WIDTH=32'b00000000000000000000000000010000
+   Generated name = I2C_Register_sys_2_0_32s_16s
+
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register.v":1:7:1:18|Synthesizing module I2C_Register in library work.
+
+	ADDR=16'b0000000000000011
+	DATA=32'b00000000110000001000001001000000
+	DATA_BUS_WIDTH=32'b00000000000000000000000000100000
+	ADDRESS_BUS_WIDTH=32'b00000000000000000000000000010000
+   Generated name = I2C_Register_3_12616256_32s_16s
+
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register.v":1:7:1:18|Synthesizing module I2C_Register in library work.
+
+	ADDR=16'b0000000000000100
+	DATA=32'b00000000110001001111111111111111
+	DATA_BUS_WIDTH=32'b00000000000000000000000000100000
+	ADDRESS_BUS_WIDTH=32'b00000000000000000000000000010000
+   Generated name = I2C_Register_4_12910591_32s_16s
+
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register.v":1:7:1:18|Synthesizing module I2C_Register in library work.
+
+	ADDR=16'b0000000000000101
+	DATA=32'b00000000110001101111111111111111
+	DATA_BUS_WIDTH=32'b00000000000000000000000000100000
+	ADDRESS_BUS_WIDTH=32'b00000000000000000000000000010000
+   Generated name = I2C_Register_5_13041663_32s_16s
+
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register.v":1:7:1:18|Synthesizing module I2C_Register in library work.
+
+	ADDR=16'b0000000000000110
+	DATA=32'b00000000110010000000000000000000
+	DATA_BUS_WIDTH=32'b00000000000000000000000000100000
+	ADDRESS_BUS_WIDTH=32'b00000000000000000000000000010000
+   Generated name = I2C_Register_6_13107200_32s_16s
+
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register.v":1:7:1:18|Synthesizing module I2C_Register in library work.
+
+	ADDR=16'b0000000000000111
+	DATA=32'b00000000110000100000000000000111
+	DATA_BUS_WIDTH=32'b00000000000000000000000000100000
+	ADDRESS_BUS_WIDTH=32'b00000000000000000000000000010000
+   Generated name = I2C_Register_7_12713991_32s_16s
+
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\top_cemf_module_64ch_reg.v":2:7:2:30|Synthesizing module top_cemf_module_64ch_reg in library work.
+
+@W: CS263 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\top_cemf_module_64ch_reg.v":159:18:159:28|Port-width mismatch for port data_system_o. The port definition is 32 bits, but the actual port connection bit width is 24. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\top_cemf_module_64ch_reg.v":179:18:179:31|Port-width mismatch for port data_system_o. The port definition is 32 bits, but the actual port connection bit width is 24. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\top_cemf_module_64ch_reg.v":198:18:198:31|Port-width mismatch for port data_system_o. The port definition is 32 bits, but the actual port connection bit width is 24. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\top_cemf_module_64ch_reg.v":218:18:218:33|Port-width mismatch for port data_system_o. The port definition is 32 bits, but the actual port connection bit width is 24. Adjust either the definition or the instantiation of this port.
+@W: CS263 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\top_cemf_module_64ch_reg.v":237:18:237:32|Port-width mismatch for port data_system_o. The port definition is 32 bits, but the actual port connection bit width is 24. Adjust either the definition or the instantiation of this port.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_ctrl.v":1:7:1:27|Synthesizing module cemf_module_64ch_ctrl in library work.
+
+	N_ELECTRODES=32'b00000000000000000000000010000001
+   Generated name = cemf_module_64ch_ctrl_129s
+
+@N: CG179 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_ctrl.v":135:18:135:25|Removing redundant assignment.
+@N: CG179 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_ctrl.v":149:16:149:21|Removing redundant assignment.
+@W: CG360 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_ctrl.v":44:2:44:10|Removing wire sr_finish, as there is no assignment to it.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\serializer_mod.v":4:7:4:20|Synthesizing module serializer_mod in library work.
+
+	N_ELECTRODES=32'b00000000000000000000000010000001
+	IDLE=2'b00
+	SR_ELEC_CONFIG=2'b01
+	SR_SHIFT=2'b10
+	SR_FINISH=2'b11
+   Generated name = serializer_mod_129s_0_1_2_3
+
+@W: CL118 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\serializer_mod.v":53:9:53:12|Latch generated from always block for signal next_state[2:0]; possible missing assignment in an if or case statement.
+@A: CL282 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\serializer_mod.v":62:1:62:6|Feedback mux created for signal serial_out_test. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@A: CL282 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\serializer_mod.v":62:1:62:6|Feedback mux created for signal electr_config_test[128:0]. It is possible a set/reset assignment for this is signal missing. To improve timing and area, specify a set/reset value.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Control_StartUp.v":2:7:2:25|Synthesizing module I2C_Control_StartUp in library work.
+
+@A: CL291 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Control_StartUp.v":49:0:49:5|Register stop_resetter with asynchronous load is being synthesized in compatability mode. A synthesis/simulation mismatch is possible.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_FSM.v":3:7:3:13|Synthesizing module I2C_FSM in library work.
+
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Interpreter.v":1:8:1:22|Synthesizing module I2C_interpreter in library work.
+
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\RX_Shift_Register.v":2:7:2:23|Synthesizing module RX_Shift_Register in library work.
+
+@N: CG179 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\RX_Shift_Register.v":25:13:25:18|Removing redundant assignment.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\TX_Shift_Register.v":2:7:2:23|Synthesizing module TX_Shift_Register in library work.
+
+@N: CG179 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\TX_Shift_Register.v":33:16:33:24|Removing redundant assignment.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\command_reg.v":1:7:1:17|Synthesizing module command_reg in library work.
+
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_addr0_reg.v":1:7:1:19|Synthesizing module I2C_addr0_reg in library work.
+
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_addr1_reg.v":1:7:1:19|Synthesizing module I2C_addr1_reg in library work.
+
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_top_level.v":1:7:1:19|Synthesizing module I2C_top_level in library work.
+
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":5:7:5:27|Synthesizing module cemf_module_64ch_main in library work.
+
+@W: CG781 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":99:21:99:21|Input LATCH_INPUT_VALUE on instance IO_PIN_INST is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":100:16:100:16|Input CLOCK_ENABLE on instance IO_PIN_INST is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":101:13:101:13|Input INPUT_CLK on instance IO_PIN_INST is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":102:14:102:14|Input OUTPUT_CLK on instance IO_PIN_INST is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":105:11:105:11|Input D_OUT_1 on instance IO_PIN_INST is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":135:21:135:21|Input LATCH_INPUT_VALUE on instance INTB0_INST is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":136:16:136:16|Input CLOCK_ENABLE on instance INTB0_INST is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":137:13:137:13|Input INPUT_CLK on instance INTB0_INST is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":138:14:138:14|Input OUTPUT_CLK on instance INTB0_INST is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":139:17:139:17|Input OUTPUT_ENABLE on instance INTB0_INST is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":140:11:140:11|Input D_OUT_0 on instance INTB0_INST is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":141:11:141:11|Input D_OUT_1 on instance INTB0_INST is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG1273 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":134:16:134:20|An input port (port intb0) is the target of an assignment - please check if this is intentional
+@W: CG781 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":171:21:171:21|Input LATCH_INPUT_VALUE on instance INTB1_INST is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":172:16:172:16|Input CLOCK_ENABLE on instance INTB1_INST is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":173:13:173:13|Input INPUT_CLK on instance INTB1_INST is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":174:14:174:14|Input OUTPUT_CLK on instance INTB1_INST is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":175:17:175:17|Input OUTPUT_ENABLE on instance INTB1_INST is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":176:11:176:11|Input D_OUT_0 on instance INTB1_INST is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG781 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":177:11:177:11|Input D_OUT_1 on instance INTB1_INST is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG1273 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":170:16:170:20|An input port (port intb1) is the target of an assignment - please check if this is intentional
+@W: CS263 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":253:24:253:41|Port-width mismatch for port electr_config_test. The port definition is 129 bits, but the actual port connection bit width is 4. Adjust either the definition or the instantiation of this port.
+@W: CG781 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":256:15:256:33|Input pslverr on instance I2C_top_level_inst1 is undriven; assigning to 0.  Simulation mismatch possible. Either assign the input or remove the declaration. 
+@W: CG360 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":82:24:82:33|Removing wire s_in_out_n, as there is no assignment to it.
+@N: CL201 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Interpreter.v":173:0:173:5|Trying to extract state machine for register c_state.
+Extracted state machine for register c_state
+State machine has 27 reachable states with original encodings of:
+   00000
+   00001
+   00010
+   00011
+   00100
+   00101
+   00110
+   00111
+   01000
+   01001
+   01010
+   01011
+   01100
+   01101
+   01111
+   10000
+   10001
+   10010
+   10011
+   10100
+   10110
+   10111
+   11000
+   11001
+   11100
+   11101
+   11110
+@N: CL159 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Interpreter.v":71:6:71:12|Input pslverr is unused.
+@N: CL201 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_FSM.v":76:0:76:5|Trying to extract state machine for register c_state.
+Extracted state machine for register c_state
+State machine has 15 reachable states with original encodings of:
+   0000
+   0001
+   0010
+   0011
+   0100
+   0101
+   0110
+   0111
+   1000
+   1001
+   1010
+   1011
+   1100
+   1101
+   1110
+@W: CL156 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_ctrl.v":44:2:44:10|*Input sr_finish to expression [instance] has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the input.
+@W: CL157 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_ctrl.v":44:2:44:10|*Output sr_finish has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register.v":31:11:31:17|*Output pslverr has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register.v":31:11:31:17|*Output pslverr has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register.v":31:11:31:17|*Output pslverr has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register.v":31:11:31:17|*Output pslverr has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register.v":31:11:31:17|*Output pslverr has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Pruning unused register c_data_system_o[31:0]. Make sure that there are no unused intermediate registers.
+@N: CL159 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":23:6:23:9|Input pclk is unused.
+@N: CL159 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":24:6:24:10|Input reset is unused.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[0] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[6] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[7] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[8] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[9] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[10] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[11] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[12] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[13] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[14] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[15] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[16] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[17] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[18] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[19] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[20] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[21] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[22] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[23] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[24] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[25] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[26] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[27] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[28] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[29] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[30] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Optimizing register bit c_data_system_o[31] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL169 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":41:0:41:5|Pruning unused register c_data_system_o[31:0]. Make sure that there are no unused intermediate registers.
+@N: CL159 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":23:6:23:9|Input pclk is unused.
+@N: CL159 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":24:6:24:10|Input reset is unused.
+@W: CL246 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module_top.v":3:2:3:6|Input port bits 15 to 9 of paddr[15:0] are unused. Assign logic for all port bits or change the input port size.
+@W: CL246 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":3:2:3:6|Input port bits 7 to 6 of raddr[7:0] are unused. Assign logic for all port bits or change the input port size.
+@W: CL246 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":7:2:7:6|Input port bits 7 to 6 of waddr[7:0] are unused. Assign logic for all port bits or change the input port size.
+@N: CL201 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_read.v":117:0:117:5|Trying to extract state machine for register c_state.
+Extracted state machine for register c_state
+State machine has 17 reachable states with original encodings of:
+   00000
+   00001
+   00010
+   00011
+   00100
+   00101
+   00110
+   01000
+   01001
+   01010
+   01011
+   01100
+   01101
+   01110
+   01111
+   10001
+   10010
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_op.v":52:0:52:5|Optimizing register bit ser_data[1] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_op.v":52:0:52:5|Pruning register bit 1 of ser_data[23:1]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_op.v":52:0:52:5|Optimizing register bit ser_data[2] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_op.v":52:0:52:5|Pruning register bit 2 of ser_data[23:2]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_op.v":52:0:52:5|Optimizing register bit ser_data[3] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_op.v":52:0:52:5|Pruning register bit 3 of ser_data[23:3]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL201 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_op.v":73:0:73:5|Trying to extract state machine for register c_state.
+Extracted state machine for register c_state
+State machine has 4 reachable states with original encodings of:
+   00000
+   00001
+   00010
+   00011
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_op.v":52:0:52:5|Optimizing register bit ser_data[4] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_op.v":52:0:52:5|Pruning register bit 4 of ser_data[23:4]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@W: CL190 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_op.v":52:0:52:5|Optimizing register bit ser_data[5] to a constant 0. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: CL260 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_op.v":52:0:52:5|Pruning register bit 5 of ser_data[23:5]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
+@N: CL159 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_op.v":7:2:7:4|Input din is unused.
+@W: CL177 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_conf.v":134:2:134:5|Sharing sequential element en_ser. Add a syn_preserve attribute to the element to prevent sharing.
+@N: CL201 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_conf.v":104:0:104:5|Trying to extract state machine for register c_state.
+Extracted state machine for register c_state
+State machine has 21 reachable states with original encodings of:
+   00000
+   00001
+   00010
+   00011
+   00100
+   00101
+   00110
+   00111
+   01000
+   01001
+   01010
+   01011
+   01100
+   01101
+   01110
+   01111
+   10000
+   10001
+   10010
+   10011
+   10100
+@N: CL159 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_conf.v":8:2:8:4|Input din is unused.
+@N: CL201 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":173:1:173:6|Trying to extract state machine for register c_state.
+Extracted state machine for register c_state
+State machine has 32 reachable states with original encodings of:
+   000000
+   000001
+   000010
+   000011
+   000100
+   000101
+   000110
+   000111
+   001000
+   001001
+   001010
+   001011
+   001100
+   001101
+   001110
+   001111
+   010000
+   010001
+   010010
+   010011
+   010100
+   010101
+   010110
+   010111
+   011000
+   011001
+   011010
+   011011
+   011100
+   011101
+   011110
+   011111

@@ -1,0 +1,56 @@
+#### START OF AREA REPORT #####[
+
+Part:			ICE40LP8KCM81 (Lattice)
+
+--------------------------------------------------------------------------
+########   Utilization report for  Top level view:   ram_module   ########
+==========================================================================
+
+SEQUENTIAL ELEMENTS
+Name      Total elements     Utilization     Notes
+--------------------------------------------------
+FLOPS     32                 100 %                
+==================================================
+Total SEQUENTIAL ELEMENTS in the block ram_module:	32 (20.78 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+LUTS     35                 100 %                
+=================================================
+Total COMBINATIONAL LOGIC in the block ram_module:	35 (22.73 % Utilization)
+
+
+MEMORY ELEMENTS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+RAMS     2                  100 %                
+=================================================
+Total MEMORY ELEMENTS in the block ram_module:	2 (1.30 % Utilization)
+
+
+IO PADS
+Name     Total elements     Utilization     Notes
+-------------------------------------------------
+PADS     83                 100 %                
+=================================================
+Total IO PADS in the block ram_module:	83 (53.90 % Utilization)
+
+#### START OF Block RAM DETAILED REPORT ####
+
+Total Block RAMs: 2
+
+mem_mem_0_1
+----------------------------
+----------------------------
+
+mem_mem_0_0
+----------------------------
+----------------------------
+
+#### END OF  Block RAM DETAILED REPORT ####
+
+
+##### END OF AREA REPORT #####]
+

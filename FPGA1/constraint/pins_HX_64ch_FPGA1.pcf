@@ -1,0 +1,60 @@
+###############################################################################
+# Constraint file (.pcf) to define the interface of 64CH system  implemented  #
+# in IC40LP8K FPGA (ICE40LP8K-CM81)					   			          #
+###############################################################################
+
+# BANK 0
+#set_io intb0 C4
+#set_io intb1 C5
+
+
+# BANK 1
+#set_io csb1_out J8
+#set_io sdin1 J9
+#set_io sclk1 H9
+#set_io dout1 G9
+#set_io sdin E7
+#set_io ch0 G8
+#set_io csb0_out A9
+#set_io sclk D7
+#set_io dout F8
+#set_io intb D9
+#set_io sclk0 B9
+#set_io sdin0 C9
+#set_io dout0 D8
+#set_io sync_50hz E8
+
+# BANK 2
+#set_io sda H1
+#set_io trigger1 J1
+#set_io start1 J2
+#set_io stop1 J3
+#set_io clock J4
+#set_io csb1_in H4
+#set_io rst_n G4
+
+# BANK 3
+#set_io banck_tdc E4
+#set_io stop0 F1
+#set_io trigger0 F3
+#set_io scl G3
+#set_io start0 G1
+#set_io next_sequence G2
+#set_io stop_fpga2 H2
+#set_io cemf_signal D3
+#set_io csb0_in E3
+
+# SPI
+
+# TESTING--RAUL
+set_io s3 C2
+set_io s2 D2
+set_io s1 E2
+set_io s0 H1
+set_io serial_out_testing A9
+set_io enable_config A8
+
+set_io clock B2
+set_io rst_n A7
+
+

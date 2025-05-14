@@ -1,0 +1,56 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"C:\lscc\iCEcube2.2020.12\synpbase\lib\generic\sb_ice40.v":501:7:501:11|Synthesizing module SB_IO in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":1:7:1:34|Synthesizing module cemf_module_64ch_fsm_average in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_conf.v":1:7:1:18|Synthesizing module tdc_spi_conf in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_op.v":1:7:1:16|Synthesizing module tdc_spi_op in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_read.v":1:7:1:18|Synthesizing module tdc_spi_read in library work.
+@N: CG179 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_read.v":87:19:87:28|Removing redundant assignment.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi.v":1:7:1:13|Synthesizing module tdc_spi in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\spi_top.v":1:7:1:13|Synthesizing module spi_top in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\mux_tdc.v":1:7:1:13|Synthesizing module mux_tdc in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":1:7:1:16|Synthesizing module ram_module in library work.
+@N: CL134 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module.v":35:0:35:5|Found RAM mem, depth=64, width=32
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\ram_module_top.v":1:7:1:20|Synthesizing module ram_module_top in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":1:7:1:23|Synthesizing module I2C_Register_read in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":1:7:1:23|Synthesizing module I2C_Register_read in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_sys.v":1:7:1:22|Synthesizing module I2C_Register_sys in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register.v":1:7:1:18|Synthesizing module I2C_Register in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register.v":1:7:1:18|Synthesizing module I2C_Register in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register.v":1:7:1:18|Synthesizing module I2C_Register in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register.v":1:7:1:18|Synthesizing module I2C_Register in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register.v":1:7:1:18|Synthesizing module I2C_Register in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\top_cemf_module_64ch_reg.v":2:7:2:30|Synthesizing module top_cemf_module_64ch_reg in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_ctrl.v":1:7:1:27|Synthesizing module cemf_module_64ch_ctrl in library work.
+@N: CG179 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_ctrl.v":135:18:135:25|Removing redundant assignment.
+@N: CG179 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_ctrl.v":149:16:149:21|Removing redundant assignment.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\serializer_mod.v":4:7:4:20|Synthesizing module serializer_mod in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Control_StartUp.v":2:7:2:25|Synthesizing module I2C_Control_StartUp in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_FSM.v":3:7:3:13|Synthesizing module I2C_FSM in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Interpreter.v":1:8:1:22|Synthesizing module I2C_interpreter in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\RX_Shift_Register.v":2:7:2:23|Synthesizing module RX_Shift_Register in library work.
+@N: CG179 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\RX_Shift_Register.v":25:13:25:18|Removing redundant assignment.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\TX_Shift_Register.v":2:7:2:23|Synthesizing module TX_Shift_Register in library work.
+@N: CG179 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\TX_Shift_Register.v":33:16:33:24|Removing redundant assignment.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\command_reg.v":1:7:1:17|Synthesizing module command_reg in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_addr0_reg.v":1:7:1:19|Synthesizing module I2C_addr0_reg in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_addr1_reg.v":1:7:1:19|Synthesizing module I2C_addr1_reg in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_top_level.v":1:7:1:19|Synthesizing module I2C_top_level in library work.
+@N: CG364 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":5:7:5:27|Synthesizing module cemf_module_64ch_main in library work.
+@N: CL201 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Interpreter.v":173:0:173:5|Trying to extract state machine for register c_state.
+@N: CL159 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Interpreter.v":71:6:71:12|Input pslverr is unused.
+@N: CL201 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_FSM.v":76:0:76:5|Trying to extract state machine for register c_state.
+@N: CL159 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":23:6:23:9|Input pclk is unused.
+@N: CL159 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":24:6:24:10|Input reset is unused.
+@N: CL159 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":23:6:23:9|Input pclk is unused.
+@N: CL159 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\I2C_Register_read.v":24:6:24:10|Input reset is unused.
+@N: CL201 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_read.v":117:0:117:5|Trying to extract state machine for register c_state.
+@N: CL201 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_op.v":73:0:73:5|Trying to extract state machine for register c_state.
+@N: CL159 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_op.v":7:2:7:4|Input din is unused.
+@N: CL201 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_conf.v":104:0:104:5|Trying to extract state machine for register c_state.
+@N: CL159 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\tdc_spi_conf.v":8:2:8:4|Input din is unused.
+@N: CL201 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_fsm_average.v":173:1:173:6|Trying to extract state machine for register c_state.
+@N|Running in 64-bit mode
+@N: NF107 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":5:7:5:27|Selected library: work cell: cemf_module_64ch_main view verilog as top level
+@N: NF107 :"C:\Users\raul.lora\Documents\proyectoTestRaul\medusaTesting\medusaTesting\FPGA1\src\cemf_module_64ch_main.v":5:7:5:27|Selected library: work cell: cemf_module_64ch_main view verilog as top level
+

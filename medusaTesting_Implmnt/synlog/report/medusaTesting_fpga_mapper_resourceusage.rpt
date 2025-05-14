@@ -1,0 +1,39 @@
+---------------------------------------
+Resource Usage Report for cemf_module_64ch_main 
+
+Mapping to part: ice40lp8kcm81
+Cell usage:
+GND             34 uses
+SB_CARRY        77 uses
+SB_DFF          38 uses
+SB_DFFE         1 use
+SB_DFFER        251 uses
+SB_DFFES        53 uses
+SB_DFFNER       128 uses
+SB_DFFNR        90 uses
+SB_DFFNS        28 uses
+SB_DFFR         234 uses
+SB_DFFS         11 uses
+SB_GB           7 uses
+SB_RAM256x16    8 uses
+VCC             34 uses
+SB_LUT4         1460 uses
+
+I/O ports: 34
+I/O primitives: 29
+SB_GB_IO       1 use
+SB_IO          28 uses
+
+I/O Register bits:                  0
+Register bits not including I/Os:   834 (10%)
+
+RAM/ROM usage summary
+Block Rams : 8 of 32 (25%)
+
+
+@S |Mapping Summary:
+Total  LUTs: 1460 (19%)
+
+Distribution of All Consumed LUTs = LUT4 
+Distribution of All Consumed Luts 1460 = 1460 
+

@@ -1,0 +1,205 @@
+* ******************************************************************************
+
+* iCEcube Placer
+
+* Version:            2020.12.27943
+
+* Build Date:         Dec  9 2020 17:55:50
+
+* File Generated:     Mar 31 2025 15:35:02
+
+* Purpose:            
+
+* Copyright (C) 2006-2010 by Lattice Semiconductor Corp. All rights reserved.
+
+* ******************************************************************************
+
+Executing : C:\lscc\iCEcube2.2020.12\sbt_backend\bin\win32\opt\sbtplacer.exe --des-lib C:/Users/raul.lora/Documents/proyectoTestRaul/medusaTesting/medusaTesting/medusaTesting_Implmnt\sbt\netlist\oadb-cemf_module_64ch_main --outdir C:/Users/raul.lora/Documents/proyectoTestRaul/medusaTesting/medusaTesting/medusaTesting_Implmnt\sbt\outputs\placer --device-file C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P08.dev --package CM81 --deviceMarketName iCE40LP8K --sdc-file C:/Users/raul.lora/Documents/proyectoTestRaul/medusaTesting/medusaTesting/medusaTesting_Implmnt\sbt\Temp/sbt_temp.sdc --lib-file C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40LP8K.lib --effort_level std --out-sdc-file C:/Users/raul.lora/Documents/proyectoTestRaul/medusaTesting/medusaTesting/medusaTesting_Implmnt\sbt\outputs\placer\cemf_module_64ch_main_pl.sdc
+I2004: Option and Settings Summary
+=============================================================
+Device file          - C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P08.dev
+Package              - CM81
+Design database      - C:/Users/raul.lora/Documents/proyectoTestRaul/medusaTesting/medusaTesting/medusaTesting_Implmnt\sbt\netlist\oadb-cemf_module_64ch_main
+SDC file             - C:/Users/raul.lora/Documents/proyectoTestRaul/medusaTesting/medusaTesting/medusaTesting_Implmnt\sbt\Temp/sbt_temp.sdc
+Output directory     - C:/Users/raul.lora/Documents/proyectoTestRaul/medusaTesting/medusaTesting/medusaTesting_Implmnt\sbt\outputs\placer
+Timing library       - C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ice40LP8K.lib
+Effort level         - std
+
+I2050: Starting reading inputs for placer
+=============================================================
+I2100: Reading design library: C:/Users/raul.lora/Documents/proyectoTestRaul/medusaTesting/medusaTesting/medusaTesting_Implmnt\sbt\netlist\oadb-cemf_module_64ch_main/BFPGA_DESIGN_ep
+I2065: Reading device file : C:\lscc\iCEcube2.2020.12\sbt_backend\devices\ICE40P08.dev
+I2051: Reading of inputs for placer completed successfully
+
+I2053: Starting placement of the design
+=============================================================
+
+Input Design Statistics
+    Number of LUTs      	:	1460
+    Number of DFFs      	:	834
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	77
+    Number of RAMs      	:	8
+    Number of ROMs      	:	0
+    Number of IOs       	:	28
+    Number of GBIOs     	:	1
+    Number of GBs       	:	7
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+
+
+Phase 1
+I2077: Start design legalization
+W2216: SB_GB_IO 'clock_ibuf_gb_io' is assigned to a non-GB pin 'B2'. Replacing it with SB_IO 'clock_ibuf_gb_io' and SB_GB 'clock_ibuf_gb_io_gb'
+
+Design Legalization Statistics
+    Number of feedthru LUTs inserted to legalize input of DFFs     	:	110
+    Number of feedthru LUTs inserted for LUTs driving multiple DFFs	:	0
+    Number of LUTs replicated for LUTs driving multiple DFFs       	:	148
+    Number of feedthru LUTs inserted to legalize output of CARRYs  	:	10
+    Number of feedthru LUTs inserted to legalize global signals    	:	0
+    Number of feedthru CARRYs inserted to legalize input of CARRYs 	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 01xxxx  	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 10xxxx  	:	0
+    Number of inserted LUTs to Legalize IOs with PIN_TYPE= 11xxxx  	:	0
+    Total LUTs inserted                                            	:	268
+    Total CARRYs inserted                                          	:	0
+
+
+I2078: Design legalization is completed successfully
+I2088: Phase 1, elapsed time : 0.0 (sec)
+
+
+Phase 2
+I2088: Phase 2, elapsed time : 0.1 (sec)
+
+Phase 3
+Warning-1034: Found non-unate timing arc, from pin "PACKAGEPIN" to pin "DIN0" of instance "clock_ibuf_gb_io", in the clock network. Converting the timing arc to positive-unate
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIP8T76_LC_801/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIP8T76_LC_801/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNIO5CO7_LC_1070/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNIO5CO7_LC_1070/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIUDT76_LC_805/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIUDT76_LC_805/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNITACO7_LC_1076/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNITACO7_LC_1076/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNI3JT76_LC_784/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNI3JT76_LC_784/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNI2GCO7_LC_1036/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNI2GCO7_LC_1036/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNI8OT76_LC_786/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNI8OT76_LC_786/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNI7LCO7_LC_1042/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNI7LCO7_LC_1042/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIDTT76_LC_789/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIDTT76_LC_789/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNICQCO7_LC_1050/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNICQCO7_LC_1050/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNII2U76_LC_793/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNII2U76_LC_793/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNIHVCO7_LC_1058/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNIHVCO7_LC_1058/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNISCU76_LC_802/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNISCU76_LC_802/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNIR9DO7_LC_1071/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNIR9DO7_LC_1071/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNI1IU76_LC_782/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNI1IU76_LC_782/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNI0FDO7_LC_1030/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNI0FDO7_LC_1030/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNI94AV5_LC_787/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNI94AV5_LC_787/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNI81PF7_LC_1043/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNI81PF7_LC_1043/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIE9AV5_LC_790/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIE9AV5_LC_790/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNID6PF7_LC_1052/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNID6PF7_LC_1052/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIEEFV5_LC_791/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIEEFV5_LC_791/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNIDBUF7_LC_1053/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNIDBUF7_LC_1053/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIJEAV5_LC_794/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIJEAV5_LC_794/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNIIBPF7_LC_1060/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNIIBPF7_LC_1060/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIJJFV5_LC_795/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIJJFV5_LC_795/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNIIGUF7_LC_1061/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNIIGUF7_LC_1061/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIOJAV5_LC_799/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIOJAV5_LC_799/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNINGPF7_LC_1068/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNINGPF7_LC_1068/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIOOFV5_LC_800/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIOOFV5_LC_800/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNINLUF7_LC_1069/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNINLUF7_LC_1069/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNITOAV5_LC_803/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNITOAV5_LC_803/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNISLPF7_LC_1074/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNISLPF7_LC_1074/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNITTFV5_LC_804/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNITTFV5_LC_804/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNISQUF7_LC_1075/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNISQUF7_LC_1075/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNI2UAV5_LC_783/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNI2UAV5_LC_783/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNI1RPF7_LC_1033/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNI1RPF7_LC_1033/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNI73BV5_LC_785/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNI73BV5_LC_785/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNI60QF7_LC_1038/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNI60QF7_LC_1038/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIC8BV5_LC_788/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIC8BV5_LC_788/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNIB5QF7_LC_1047/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNIB5QF7_LC_1047/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIHDBV5_LC_792/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIHDBV5_LC_792/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNIGAQF7_LC_1055/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNIGAQF7_LC_1055/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIMIBV5_LC_797/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIMIBV5_LC_797/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNILFQF7_LC_1064/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNILFQF7_LC_1064/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIK3T76_LC_796/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIK3T76_LC_796/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNIJ0CO7_LC_1062/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNIJ0CO7_LC_1062/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.cemf_module_64ch_fsm_int1.c_state_ret_12_RNIDMPS1_LC_668/in1" to pin "cemf_module_64ch_ctrl_inst1.cemf_module_64ch_fsm_int1.c_state_ret_12_RNIDMPS1_LC_668/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.cemf_module_64ch_fsm_int1.c_state_0_RNIT2U5[16]_LC_659/in1" to pin "cemf_module_64ch_ctrl_inst1.cemf_module_64ch_fsm_int1.c_state_0_RNIT2U5[16]_LC_659/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIN7U76_LC_798/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_a.spi_conf_inst1.c_state_ret_13_RNIN7U76_LC_798/lcout" to break the combinatorial loop
+Warning-1035: Removing timing arc from pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNIM4DO7_LC_1065/in1" to pin "cemf_module_64ch_ctrl_inst1.spi_top_inst1.tdc_inst_b.spi_conf_inst1.c_state_ret_7_RNIM4DO7_LC_1065/lcout" to break the combinatorial loop
+
+Design Statistics after Packing
+    Number of LUTs      	:	1729
+    Number of DFFs      	:	834
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	77
+
+Device Utilization Summary after Packing
+    Sequential LogicCells
+        LUT and DFF      	:	788
+        LUT, DFF and CARRY	:	46
+    Combinational LogicCells
+        Only LUT         	:	868
+        CARRY Only       	:	4
+        LUT with CARRY   	:	27
+    LogicCells                  :	1733/7680
+    PLBs                        :	243/960
+    BRAMs                       :	8/32
+    IOs and GBIOs               :	29/63
+    PLLs                        :	0/1
+
+
+I2088: Phase 3, elapsed time : 4.1 (sec)
+
+Phase 4
+I2088: Phase 4, elapsed time : 0.4 (sec)
+
+Phase 5
+I2088: Phase 5, elapsed time : 11.6 (sec)
+
+Phase 6
+I2088: Phase 6, elapsed time : 130.5 (sec)
+
+Final Design Statistics
+    Number of LUTs      	:	1729
+    Number of DFFs      	:	834
+    Number of DFFs packed to IO	:	0
+    Number of Carrys    	:	77
+    Number of RAMs      	:	8
+    Number of ROMs      	:	0
+    Number of IOs       	:	29
+    Number of GBIOs     	:	0
+    Number of GBs       	:	8
+    Number of WarmBoot  	:	0
+    Number of PLLs      	:	0
+
+Device Utilization Summary
+    LogicCells                  :	1733/7680
+    PLBs                        :	309/960
+    BRAMs                       :	8/32
+    IOs and GBIOs               :	29/63
+    PLLs                        :	0/1
+
+
+
+#####################################################################
+Placement Timing Summary
+
+The timing summary is based on estimated routing delays after
+placement. For final timing report, please carry out the timing
+analysis after routing.
+=====================================================================
+
+#####################################################################
+                     Clock Summary 
+=====================================================================
+Number of clocks: 2
+Clock: cemf_module_64ch_main|scl | Frequency: 119.57 MHz | Target: 1.00 MHz
+Clock: clock | Frequency: 63.22 MHz | Target: 16.00 MHz
+
+=====================================================================
+                     End of Clock Summary
+#####################################################################
+
+I2054: Placement of design completed successfully
+
+I2076: Placer run-time: 148.3 sec.
+

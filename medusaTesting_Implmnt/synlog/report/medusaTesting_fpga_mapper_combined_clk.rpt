@@ -1,0 +1,22 @@
+
+
+@S |Clock Optimization Summary
+
+
+#### START OF CLOCK OPTIMIZATION REPORT #####[
+
+3 non-gated/non-generated clock tree(s) driving 850 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
+
+================================================ Non-Gated/Non-Generated Clocks =================================================
+Clock Tree ID     Driving Element      Drive Element Type     Fanout     Sample Instance                                         
+---------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       clock_ibuf_gb_io     SB_GB_IO               759        I2C_top_level_inst1.s_sda_o_tx                          
+@K:CKID0002       scl_ibuf             SB_IO                  89         I2C_top_level_inst1.addr1_reg_inst.c_addr1[7]           
+@K:CKID0003       IO_PIN_INST          SB_IO                  2          I2C_top_level_inst1.I2C_Control_StartUp_inst.stop_detect
+=================================================================================================================================
+
+
+##### END OF CLOCK OPTIMIZATION REPORT ######]
+

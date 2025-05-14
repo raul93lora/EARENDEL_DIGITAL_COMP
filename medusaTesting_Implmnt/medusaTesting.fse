@@ -1,0 +1,341 @@
+
+fsm_encoding {1717311736} onehot
+
+fsm_state_encoding {1717311736} idle {00000000000000000000000000000001}
+
+fsm_state_encoding {1717311736} conf_a_st {00000000000000000000000000000010}
+
+fsm_state_encoding {1717311736} wait_conf_a {00000000000000000000000000000100}
+
+fsm_state_encoding {1717311736} conf_b_st {00000000000000000000000000001000}
+
+fsm_state_encoding {1717311736} wait_conf_b {00000000000000000000000000010000}
+
+fsm_state_encoding {1717311736} end_conf_st {00000000000000000000000000100000}
+
+fsm_state_encoding {1717311736} init_st {00000000000000000000000001000000}
+
+fsm_state_encoding {1717311736} next_seq_st {00000000000000000000000010000000}
+
+fsm_state_encoding {1717311736} wait_st_1 {00000000000000000000000100000000}
+
+fsm_state_encoding {1717311736} wait_read_op1 {00000000000000000000001000000000}
+
+fsm_state_encoding {1717311736} read_op1 {00000000000000000000010000000000}
+
+fsm_state_encoding {1717311736} wait_st_3 {00000000000000000000100000000000}
+
+fsm_state_encoding {1717311736} wait_st_4 {00000000000000000001000000000000}
+
+fsm_state_encoding {1717311736} wait_read_op4 {00000000000000000010000000000000}
+
+fsm_state_encoding {1717311736} read_op4 {00000000000000000100000000000000}
+
+fsm_state_encoding {1717311736} wait_st_5 {00000000000000001000000000000000}
+
+fsm_state_encoding {1717311736} wait_st_6 {00000000000000010000000000000000}
+
+fsm_state_encoding {1717311736} wait_for_sr {00000000000000100000000000000000}
+
+fsm_state_encoding {1717311736} start_st {00000000000001000000000000000000}
+
+fsm_state_encoding {1717311736} sync_st {00000000000010000000000000000000}
+
+fsm_state_encoding {1717311736} first_channel {00000000000100000000000000000000}
+
+fsm_state_encoding {1717311736} normal_channel {00000000001000000000000000000000}
+
+fsm_state_encoding {1717311736} en_counters {00000000010000000000000000000000}
+
+fsm_state_encoding {1717311736} wait_st {00000000100000000000000000000000}
+
+fsm_state_encoding {1717311736} start_gen_st {00000001000000000000000000000000}
+
+fsm_state_encoding {1717311736} wait_cemf_st {00000010000000000000000000000000}
+
+fsm_state_encoding {1717311736} stop_gen_st {00000100000000000000000000000000}
+
+fsm_state_encoding {1717311736} update_addr {00001000000000000000000000000000}
+
+fsm_state_encoding {1717311736} end_st {00010000000000000000000000000000}
+
+fsm_state_encoding {1717311736} end_st_2 {00100000000000000000000000000000}
+
+fsm_state_encoding {1717311736} end_st_3 {01000000000000000000000000000000}
+
+fsm_state_encoding {1717311736} end_st_4 {10000000000000000000000000000000}
+
+fsm_registers {1717311736} {c_state[31]}  {c_state[30]}  {c_state[29]}  {c_state[28]}  {c_state[27]}  {c_state[26]}  {c_state[25]}  {c_state[24]}  {c_state[23]}  {c_state[22]}  {c_state[21]}  {c_state[20]}  {c_state[19]}  {c_state[18]}  {c_state[17]}  {c_state[16]}  {c_state[15]}  {c_state[14]}  {c_state[13]}  {c_state[12]}  {c_state[11]}  {c_state[10]}  {c_state[9]}  {c_state[8]}  {c_state[7]}  {c_state[6]}  {c_state[5]}  {c_state[4]}  {c_state[3]}  {c_state[2]}  {c_state[1]}  {c_state[0]} 
+
+fsm_encoding {2510401045} onehot
+
+fsm_state_encoding {2510401045} idle {000000000000000000001}
+
+fsm_state_encoding {2510401045} set1_conf1 {000000000000000000010}
+
+fsm_state_encoding {2510401045} load_conf1 {000000000000000000100}
+
+fsm_state_encoding {2510401045} en_sck_conf1 {000000000000000001000}
+
+fsm_state_encoding {2510401045} end_conf1 {000000000000000010000}
+
+fsm_state_encoding {2510401045} set1_conf2 {000000000000000100000}
+
+fsm_state_encoding {2510401045} load_conf2 {000000000000001000000}
+
+fsm_state_encoding {2510401045} en_sck_conf2 {000000000000010000000}
+
+fsm_state_encoding {2510401045} end_conf2 {000000000000100000000}
+
+fsm_state_encoding {2510401045} set1_conf3 {000000000001000000000}
+
+fsm_state_encoding {2510401045} load_conf3 {000000000010000000000}
+
+fsm_state_encoding {2510401045} en_sck_conf3 {000000000100000000000}
+
+fsm_state_encoding {2510401045} end_conf3 {000000001000000000000}
+
+fsm_state_encoding {2510401045} set1_conf4 {000000010000000000000}
+
+fsm_state_encoding {2510401045} load_conf4 {000000100000000000000}
+
+fsm_state_encoding {2510401045} en_sck_conf4 {000001000000000000000}
+
+fsm_state_encoding {2510401045} end_conf4 {000010000000000000000}
+
+fsm_state_encoding {2510401045} set1_conf5 {000100000000000000000}
+
+fsm_state_encoding {2510401045} load_conf5 {001000000000000000000}
+
+fsm_state_encoding {2510401045} en_sck_conf5 {010000000000000000000}
+
+fsm_state_encoding {2510401045} end_conf5 {100000000000000000000}
+
+fsm_registers {2510401045} {c_state[20]}  {c_state[19]}  {c_state[18]}  {c_state[17]}  {c_state[16]}  {c_state[15]}  {c_state[14]}  {c_state[13]}  {c_state[12]}  {c_state[11]}  {c_state[10]}  {c_state[9]}  {c_state[8]}  {c_state[7]}  {c_state[6]}  {c_state[5]}  {c_state[4]}  {c_state[3]}  {c_state[2]}  {c_state[1]}  {c_state[0]} 
+
+fsm_encoding {26730734} sequential
+
+fsm_state_encoding {26730734} 00000 {00}
+
+fsm_state_encoding {26730734} 00001 {01}
+
+fsm_state_encoding {26730734} 00010 {10}
+
+fsm_state_encoding {26730734} 00011 {11}
+
+fsm_registers {26730734} {c_state[1]}  {c_state[0]} 
+
+fsm_encoding {2711701173} onehot
+
+fsm_state_encoding {2711701173} idle {00000000000000001}
+
+fsm_state_encoding {2711701173} set1_read1 {00000000000000010}
+
+fsm_state_encoding {2711701173} load_read1 {00000000000000100}
+
+fsm_state_encoding {2711701173} en_sck_read1 {00000000000001000}
+
+fsm_state_encoding {2711701173} end_read1 {00000000000010000}
+
+fsm_state_encoding {2711701173} start_download1 {00000000000100000}
+
+fsm_state_encoding {2711701173} start_mcu1 {00000000001000000}
+
+fsm_state_encoding {2711701173} end_download1 {00000000010000000}
+
+fsm_state_encoding {2711701173} end_mcu1 {00000000100000000}
+
+fsm_state_encoding {2711701173} set1_read2 {00000001000000000}
+
+fsm_state_encoding {2711701173} load_read2 {00000010000000000}
+
+fsm_state_encoding {2711701173} en_sck_read2 {00000100000000000}
+
+fsm_state_encoding {2711701173} end_read2 {00001000000000000}
+
+fsm_state_encoding {2711701173} start_download2 {00010000000000000}
+
+fsm_state_encoding {2711701173} start_mcu2 {00100000000000000}
+
+fsm_state_encoding {2711701173} end_download2 {01000000000000000}
+
+fsm_state_encoding {2711701173} end_mcu2 {10000000000000000}
+
+fsm_registers {2711701173} {c_state[16]}  {c_state[15]}  {c_state[14]}  {c_state[13]}  {c_state[12]}  {c_state[11]}  {c_state[10]}  {c_state[9]}  {c_state[8]}  {c_state[7]}  {c_state[6]}  {c_state[5]}  {c_state[4]}  {c_state[3]}  {c_state[2]}  {c_state[1]}  {c_state[0]} 
+
+fsm_encoding {6760762} onehot
+
+fsm_state_encoding {6760762} idle {000000000000001}
+
+fsm_state_encoding {6760762} wait_to_check {000000000000010}
+
+fsm_state_encoding {6760762} check_dev_addr {000000000000100}
+
+fsm_state_encoding {6760762} ack_dev_reg {000000000001000}
+
+fsm_state_encoding {6760762} command {000000000010000}
+
+fsm_state_encoding {6760762} command_ack {000000000100000}
+
+fsm_state_encoding {6760762} get_addr1_reg {000000001000000}
+
+fsm_state_encoding {6760762} ack_addr1_reg {000000010000000}
+
+fsm_state_encoding {6760762} get_addr0_reg {000000100000000}
+
+fsm_state_encoding {6760762} ack_addr0_reg {000001000000000}
+
+fsm_state_encoding {6760762} write_op {000010000000000}
+
+fsm_state_encoding {6760762} ack_wr_op {000100000000000}
+
+fsm_state_encoding {6760762} read_op {001000000000000}
+
+fsm_state_encoding {6760762} ack_rd_op {010000000000000}
+
+fsm_state_encoding {6760762} wait_stop {100000000000000}
+
+fsm_registers {6760762} {c_state[14]}  {c_state[13]}  {c_state[12]}  {c_state[11]}  {c_state[10]}  {c_state[9]}  {c_state[8]}  {c_state[7]}  {c_state[6]}  {c_state[5]}  {c_state[4]}  {c_state[3]}  {c_state[2]}  {c_state[1]}  {c_state[0]} 
+
+fsm_encoding {717301731} onehot
+
+fsm_state_encoding {717301731} idle {000000000000000000000000001}
+
+fsm_state_encoding {717301731} command_op {000000000000000000000000010}
+
+fsm_state_encoding {717301731} wait_slave_address {000000000000000000000000100}
+
+fsm_state_encoding {717301731} wait_start_repeat {000000000000000000000001000}
+
+fsm_state_encoding {717301731} wait_read_op {000000000000000000000010000}
+
+fsm_state_encoding {717301731} wait_state {000000000000000000000100000}
+
+fsm_state_encoding {717301731} read_op {000000000000000000001000000}
+
+fsm_state_encoding {717301731} new_rdata {000000000000000000010000000}
+
+fsm_state_encoding {717301731} word_32 {000000000000000000100000000}
+
+fsm_state_encoding {717301731} wait_wdata {000000000000000001000000000}
+
+fsm_state_encoding {717301731} new_wdata {000000000000000010000000000}
+
+fsm_state_encoding {717301731} wait_write_op {000000000000000100000000000}
+
+fsm_state_encoding {717301731} write_op {000000000000001000000000000}
+
+fsm_state_encoding {717301731} wait_state2 {000000000000010000000000000}
+
+fsm_state_encoding {717301731} finish_state {000000000000100000000000000}
+
+fsm_state_encoding {717301731} err_finish {000000000001000000000000000}
+
+fsm_state_encoding {717301731} wait_down_start {000000000010000000000000000}
+
+fsm_state_encoding {717301731} wait_down_rdata {000000000100000000000000000}
+
+fsm_state_encoding {717301731} wait_down_wdata {000000001000000000000000000}
+
+fsm_state_encoding {717301731} wait_rdata {000000010000000000000000000}
+
+fsm_state_encoding {717301731} wait_read_status {000000100000000000000000000}
+
+fsm_state_encoding {717301731} wait_state_status {000001000000000000000000000}
+
+fsm_state_encoding {717301731} read_status {000010000000000000000000000}
+
+fsm_state_encoding {717301731} check_addr {000100000000000000000000000}
+
+fsm_state_encoding {717301731} wait_wdata_err {001000000000000000000000000}
+
+fsm_state_encoding {717301731} wait_wdata_err2 {010000000000000000000000000}
+
+fsm_state_encoding {717301731} check_addr_rd {100000000000000000000000000}
+
+fsm_registers {717301731} {c_state[26]}  {c_state[25]}  {c_state[24]}  {c_state[23]}  {c_state[22]}  {c_state[21]}  {c_state[20]}  {c_state[19]}  {c_state[18]}  {c_state[17]}  {c_state[16]}  {c_state[15]}  {c_state[14]}  {c_state[13]}  {c_state[12]}  {c_state[11]}  {c_state[10]}  {c_state[9]}  {c_state[8]}  {c_state[7]}  {c_state[6]}  {c_state[5]}  {c_state[4]}  {c_state[3]}  {c_state[2]}  {c_state[1]}  {c_state[0]} 
+760762} check_dev_addr {000000000000100}
+
+fsm_state_encoding {6760762} ack_dev_reg {000000000001000}
+
+fsm_state_encoding {6760762} command {000000000010000}
+
+fsm_state_encoding {6760762} command_ack {000000000100000}
+
+fsm_state_encoding {6760762} get_addr1_reg {000000001000000}
+
+fsm_state_encoding {6760762} ack_addr1_reg {000000010000000}
+
+fsm_state_encoding {6760762} get_addr0_reg {000000100000000}
+
+fsm_state_encoding {6760762} ack_addr0_reg {000001000000000}
+
+fsm_state_encoding {6760762} write_op {000010000000000}
+
+fsm_state_encoding {6760762} ack_wr_op {000100000000000}
+
+fsm_state_encoding {6760762} read_op {001000000000000}
+
+fsm_state_encoding {6760762} ack_rd_op {010000000000000}
+
+fsm_state_encoding {6760762} wait_stop {100000000000000}
+
+fsm_registers {6760762} {c_state[14]}  {c_state[13]}  {c_state[12]}  {c_state[11]}  {c_state[10]}  {c_state[9]}  {c_state[8]}  {c_state[7]}  {c_state[6]}  {c_state[5]}  {c_state[4]}  {c_state[3]}  {c_state[2]}  {c_state[1]}  {c_state[0]} 
+
+fsm_encoding {717301731} onehot
+
+fsm_state_encoding {717301731} idle {000000000000000000000000001}
+
+fsm_state_encoding {717301731} command_op {000000000000000000000000010}
+
+fsm_state_encoding {717301731} wait_slave_address {000000000000000000000000100}
+
+fsm_state_encoding {717301731} wait_start_repeat {000000000000000000000001000}
+
+fsm_state_encoding {717301731} wait_read_op {000000000000000000000010000}
+
+fsm_state_encoding {717301731} wait_state {000000000000000000000100000}
+
+fsm_state_encoding {717301731} read_op {000000000000000000001000000}
+
+fsm_state_encoding {717301731} new_rdata {000000000000000000010000000}
+
+fsm_state_encoding {717301731} word_32 {000000000000000000100000000}
+
+fsm_state_encoding {717301731} wait_wdata {000000000000000001000000000}
+
+fsm_state_encoding {717301731} new_wdata {000000000000000010000000000}
+
+fsm_state_encoding {717301731} wait_write_op {000000000000000100000000000}
+
+fsm_state_encoding {717301731} write_op {000000000000001000000000000}
+
+fsm_state_encoding {717301731} wait_state2 {000000000000010000000000000}
+
+fsm_state_encoding {717301731} finish_state {000000000000100000000000000}
+
+fsm_state_encoding {717301731} err_finish {000000000001000000000000000}
+
+fsm_state_encoding {717301731} wait_down_start {000000000010000000000000000}
+
+fsm_state_encoding {717301731} wait_down_rdata {000000000100000000000000000}
+
+fsm_state_encoding {717301731} wait_down_wdata {000000001000000000000000000}
+
+fsm_state_encoding {717301731} wait_rdata {000000010000000000000000000}
+
+fsm_state_encoding {717301731} wait_read_status {000000100000000000000000000}
+
+fsm_state_encoding {717301731} wait_state_status {000001000000000000000000000}
+
+fsm_state_encoding {717301731} read_status {000010000000000000000000000}
+
+fsm_state_encoding {717301731} check_addr {000100000000000000000000000}
+
+fsm_state_encoding {717301731} wait_wdata_err {001000000000000000000000000}
+
+fsm_state_encoding {717301731} wait_wdata_err2 {010000000000000000000000000}
+
+fsm_state_encoding {717301731} check_addr_rd {100000000000000000000000000}
+
+fsm_registers {717301731} {c_state[26]}  {c_state[25]}  {c_state[24]}  {c_state[23]}  {c_state[22]}  {c_state[21]}  {c_state[20]}  {c_state[19]}  {c_state[18]}  {c_state[17]}  {c_state[16]}  {c_state[15]}  {c_state[14]}  {c_state[13]}  {c_state[12]}  {c_state[11]}  {c_state[10]}  {c_state[9]}  {c_state[8]}  {c_state[7]}  {c_state[6]}  {c_state[5]}  {c_state[4]}  {c_state[3]}  {c_state[2]}  {c_state[1]}  {c_state[0]} 

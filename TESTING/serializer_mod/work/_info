@@ -1,0 +1,62 @@
+m255
+K4
+z2
+!s11f vlog 2020.3 2020.10, Oct 14 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/raul.lora/Documents/proyectoTestRaul/medusaTesting/medusaTesting/TESTING/serializer_mod
+vserializer_mod
+!s110 1742819192
+!i10b 1
+!s100 PUcb5OWOSLW;H<Vmz5?oD2
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I;J0WQ_W1:_]KTOHG;^9bS1
+R0
+w1742818167
+8serializer_mod.v
+Fserializer_mod.v
+!i122 0
+L0 4 108
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 OT;L;2020.3;71
+r1
+!s85 0
+31
+!s108 1742819191.000000
+!s107 serializer_mod.v|
+!s90 -reportprogress|300|serializer_mod.v|
+!s101 -O0
+!i113 1
+o-O0
+Z4 tCvgOpt 0
+vTB_serializer_mod
+DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+!s110 1742819199
+!i10b 1
+!s100 =<ReA;BbG:3X5ST1QS6dS0
+R1
+ITKiNoEMBCaHhAMQ5f9DRn2
+S1
+R0
+w1742819067
+8TB_serializer_mod.sv
+FTB_serializer_mod.sv
+!i122 1
+L0 3 60
+R2
+R3
+r1
+!s85 0
+31
+!s108 1742819199.000000
+!s107 TB_serializer_mod.sv|
+!s90 -reportprogress|300|TB_serializer_mod.sv|
+!s101 -O0
+!i113 1
+o-O0
+R4
+n@t@b_serializer_mod
