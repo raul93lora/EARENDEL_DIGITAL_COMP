@@ -4,7 +4,7 @@ Version=Lattice Semiconductor Corporation iCEcube - Release: 2020.12.27943 - Bui
 ProjectName=medusaTesting
 Vendor=SiliconBlue
 Synthesis=synplify
-ProjectVFiles=FPGA1/src/I2C_Control_StartUp.v=work,FPGA1/src/I2C_FSM.v=work,FPGA1/src/I2C_Interpreter.v=work,FPGA1/src/I2C_Register.v=work,FPGA1/src/I2C_Register_read.v=work,FPGA1/src/I2C_Register_sys.v=work,FPGA1/src/I2C_addr0_reg.v=work,FPGA1/src/I2C_addr1_reg.v=work,FPGA1/src/I2C_top_level.v=work,FPGA1/src/RX_Shift_Register.v=work,FPGA1/src/TX_Shift_Register.v=work,FPGA1/src/cemf_module_64ch_ctrl.v=work,FPGA1/src/cemf_module_64ch_fsm_average.v=work,FPGA1/src/cemf_module_64ch_main.v=work,FPGA1/src/command_reg.v=work,FPGA1/src/mux_tdc.v=work,FPGA1/src/ram_module.v=work,FPGA1/src/ram_module_top.v=work,FPGA1/src/spi_top.v=work,FPGA1/src/tdc_spi.v=work,FPGA1/src/tdc_spi_conf.v=work,FPGA1/src/tdc_spi_op.v=work,FPGA1/src/tdc_spi_read.v=work,FPGA1/src/top_cemf_module_64ch_reg.v=work,FPGA1/src/serializer_mod.v=work
+ProjectVFiles=FPGA1/src/I2C_Control_StartUp.v=work,FPGA1/src/I2C_FSM.v=work,FPGA1/src/I2C_Interpreter.v=work,FPGA1/src/I2C_Register.v=work,FPGA1/src/I2C_Register_read.v=work,FPGA1/src/I2C_Register_sys.v=work,FPGA1/src/I2C_addr0_reg.v=work,FPGA1/src/I2C_addr1_reg.v=work,FPGA1/src/I2C_top_level.v=work,FPGA1/src/RX_Shift_Register.v=work,FPGA1/src/TX_Shift_Register.v=work,FPGA1/src/cemf_module_64ch_ctrl.v=work,FPGA1/src/cemf_module_64ch_fsm_average.v=work,FPGA1/src/cemf_module_64ch_main.v=work,FPGA1/src/command_reg.v=work,FPGA1/src/mux_tdc.v=work,FPGA1/src/ram_module.v=work,FPGA1/src/ram_module_top.v=work,FPGA1/src/spi_top.v=work,FPGA1/src/tdc_spi.v=work,FPGA1/src/tdc_spi_conf.v=work,FPGA1/src/tdc_spi_op.v=work,FPGA1/src/tdc_spi_read.v=work,FPGA1/src/top_cemf_module_64ch_reg.v=work,FPGA1/src/serializer_mod.v=work,FPGA1/src/ASIC_bridge_top.v=work
 ProjectCFiles=FPGA1/constraint/time_constrain.sdc
 CurImplementation=medusaTesting_Implmnt
 Implementations=medusaTesting_Implmnt
@@ -43,13 +43,13 @@ DeviceFamily=iCE40
 Device=LP8K
 DevicePackage=CM81
 DevicePower=
-NetlistFile=medusaTesting_Implmnt/medusaTesting.edf
+NetlistFile=
 AdditionalEDIFFile=
 IPEDIFFile=
-DesignLib=medusaTesting_Implmnt/sbt/netlist/oadb-cemf_module_64ch_main
-DesignView=_rt
-DesignCell=cemf_module_64ch_main
-SynthesisSDCFile=medusaTesting_Implmnt/medusaTesting.scf
+DesignLib=
+DesignView=
+DesignCell=
+SynthesisSDCFile=
 UserPinConstraintFile=
 UserSDCFile=
 PhysicalConstraintFile=FPGA1/constraint/pins_HX_64ch_FPGA1.pcf

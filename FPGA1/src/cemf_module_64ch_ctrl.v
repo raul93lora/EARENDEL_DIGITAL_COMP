@@ -289,6 +289,22 @@ module cemf_module_64ch_ctrl #(parameter N_ELECTRODES = 128) (
 		.data_clkstopmask		(data_clkstopmask),
 		.data_interrupts		(data_interrupts)
 	);
+		
+	ASIC_bridge_top(
+		CLK				(),		
+		RST_N				(rst_n),
+		clk_output			(),
+		mosi_output			(),
+		sel_output			(),
+		//flag_signal_out		(),
+		miso_input			(),					// Para simulacion quita esta linea
+		//s15				(),					// Para simulacion quita esta linea
+		s14				(),					// Para simulacion quita esta linea
+		s13				(),					// Para simulacion quita esta linea
+		s12				(),					// Para simulacion quita esta linea
+		xor_out_dyn			(),					// Salida comparacion dynamic reg
+		xor_out_stat			()					// Salida comparacion static reg
+	);
 
 	
 endmodule

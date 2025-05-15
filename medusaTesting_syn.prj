@@ -27,6 +27,7 @@ add_file -verilog -lib work "FPGA1/src/tdc_spi_op.v"
 add_file -verilog -lib work "FPGA1/src/tdc_spi_read.v" 
 add_file -verilog -lib work "FPGA1/src/top_cemf_module_64ch_reg.v" 
 add_file -verilog -lib work "FPGA1/src/serializer_mod.v" 
+add_file -verilog -lib work "FPGA1/src/ASIC_bridge_top.v" 
 add_file -constraint -lib work "FPGA1/constraint/time_constrain.sdc"
 #implementation: "medusaTesting_Implmnt"
 impl -add medusaTesting_Implmnt -type fpga
