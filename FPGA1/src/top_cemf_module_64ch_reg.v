@@ -39,26 +39,29 @@ output wire [23:0] data_coarseovf;
 output wire [23:0] data_clkctrovf;
 output wire [23:0] data_clkstopmask;
 output wire [23:0] data_interrupts;
+output wire [31:0] earstatcnf1;
+output wire [31:0] earstatcnf2;
+output wire [31:0] earstatcnf3;
 
 //Internal nets and registers
 wire psel_mem, psel_reg, pready_mem, pready_reg, penable_mem, penable_reg, pwrite_mem, pwrite_reg;
 wire [31:0] prdata_reg, prdata_mem, pwdata_reg, pwdata_mem;
 wire [15:0] addr_mem;
 wire [15:0] addr_reg;
-assign addr_mem = (paddr[15:0] > 16'b0000000000000111) ? (paddr[15:0] - 16'b0000000000001000) : 16'b00000000000000000;
-assign pwrite_mem = (paddr[15:0] > 16'b0000000000000111) ? pwrite : 1'b0;
-assign psel_mem = (paddr[15:0] > 16'b0000000000000111) ? psel : 1'b0;
-assign penable_mem = (paddr[15:0] > 16'b0000000000000111) ? penable : 1'b0;
-assign pwdata_mem = (paddr[15:0] > 16'b0000000000000111) ? pwdata : 32'h00000000;
+assign addr_mem = (paddr[15:0] > 16'b0000000000001010) ? (paddr[15:0] - 16'b0000000000001011) : 16'b00000000000000000;
+assign pwrite_mem = (paddr[15:0] > 16'b0000000000001010) ? pwrite : 1'b0;
+assign psel_mem = (paddr[15:0] > 16'b0000000000001010) ? psel : 1'b0;
+assign penable_mem = (paddr[15:0] > 16'b0000000000001010) ? penable : 1'b0;
+assign pwdata_mem = (paddr[15:0] > 16'b0000000000001010) ? pwdata : 32'h00000000;
 
-assign addr_reg = (paddr[15:0] <= 16'b0000000000000111) ? paddr[15:0] : 16'b00000000000000000;
-assign pwrite_reg = (paddr[15:0] <= 16'b0000000000000111) ? pwrite : 1'b0;
-assign psel_reg = (paddr[15:0] <= 16'b0000000000000111) ? psel : 1'b0;
-assign penable_reg = (paddr[15:0] <= 16'b0000000000000111) ? penable : 1'b0;
-assign pwdata_reg = (paddr[15:0] <= 16'b0000000000000111) ? pwdata : 32'h00000000;
+assign addr_reg = (paddr[15:0] <= 16'b0000000000001010) ? paddr[15:0] : 16'b00000000000000000;
+assign pwrite_reg = (paddr[15:0] <= 16'b0000000000001010) ? pwrite : 1'b0;
+assign psel_reg = (paddr[15:0] <= 16'b0000000000001010) ? psel : 1'b0;
+assign penable_reg = (paddr[15:0] <= 16'b0000000000001010) ? penable : 1'b0;
+assign pwdata_reg = (paddr[15:0] <= 16'b0000000000001010) ? pwdata : 32'h00000000;
 
-assign pready = (paddr[15:0] > 16'b0000000000000111) ? pready_mem : pready_reg;
-assign prdata = (paddr[15:0] > 16'b0000000000000111) ? prdata_mem : prdata_reg;
+assign pready = (paddr[15:0] > 16'b0000000000001010) ? pready_mem : pready_reg;
+assign prdata = (paddr[15:0] > 16'b0000000000001010) ? prdata_mem : prdata_reg;
 	
 //Mem insta
 ram_module_top ram_module_top_inst(
@@ -236,6 +239,68 @@ I2C_Register_conf5
 		.prdata			(prdata_reg),
 		.data_system_o	(data_interrupts)
 		);
+
+//STATIC REG configuration
+I2C_Register
+#(		.ADDR (16'b0000000000001000),
+		.DATA (32'h00C08240),
+		.DATA_BUS_WIDTH(32),
+		.ADDRESS_BUS_WIDTH(16)		
+)
+I2C_Register_conf_staticreg1
+(
+		.pclk			(clock),
+		.reset			(rst_n),
+		.pwrite			(pwrite_reg),
+		.psel			(psel_reg),
+		.penable		(penable_reg),
+		.pready			(pready_reg),
+		.paddr			(addr_reg),
+		.pwdata			(pwdata_reg),
+		.prdata			(prdata_reg),
+		.data_system_o	(earstatcnf1)
+		);
+
+I2C_Register
+#(		.ADDR (16'b0000000000001001),
+		.DATA (32'h00C08240),
+		.DATA_BUS_WIDTH(32),
+		.ADDRESS_BUS_WIDTH(16)		
+)
+I2C_Register_conf_staticreg2
+(
+		.pclk			(clock),
+		.reset			(rst_n),
+		.pwrite			(pwrite_reg),
+		.psel			(psel_reg),
+		.penable		(penable_reg),
+		.pready			(pready_reg),
+		.paddr			(addr_reg),
+		.pwdata			(pwdata_reg),
+		.prdata			(prdata_reg),
+		.data_system_o	(earstatcnf2)
+		);
+
+I2C_Register
+#(		.ADDR (16'b0000000000001010),
+		.DATA (32'h00C08240),
+		.DATA_BUS_WIDTH(32),
+		.ADDRESS_BUS_WIDTH(16)		
+)
+I2C_Register_conf_staticreg3
+(
+		.pclk			(clock),
+		.reset			(rst_n),
+		.pwrite			(pwrite_reg),
+		.psel			(psel_reg),
+		.penable		(penable_reg),
+		.pready			(pready_reg),
+		.paddr			(addr_reg),
+		.pwdata			(pwdata_reg),
+		.prdata			(prdata_reg),
+		.data_system_o	(earstatcnf3)
+		);
+
 
 endmodule
 		
