@@ -7,7 +7,13 @@ module cemf_module_64ch_fsm_average #(parameter N_ELECTRODES = 128) (
 		start_op_a,					// Control signal to launch the measurement process in TDC A
 		start_read_a,					// Control signal to start the data downloading process in TDC A
 		start_conf_b,					// Control signal to start the configuration of TDC B
-		end_conf_b,					// Signal indicating the end of TDC B configuration
+		end_conf_b,					// Signal indicating the end of TDC B configuration		
+		start_static1_conf,				// Control signal to start de ASIC Bridge that can send static1 reg config to Analog ASIC
+		end_static1_conf,				// Signal to indicate that ASIC Bridge has sent properly the static1 reg config to Analog ASIC		
+		start_static2_conf,				// Control signal to start de ASIC Bridge that can send static2 reg config to Analog ASIC
+		end_static2_conf,				// Signal to indicate that ASIC Bridge has sent properly the static2 reg config to Analog ASIC		
+		start_static3_conf,				// Control signal to start de ASIC Bridge that can send static3 reg config to Analog ASIC
+		end_static3_conf,				// Signal to indicate that ASIC Bridge has sent properly the static3 reg config to Analog ASIC
 		start_op_b,					// Control signal to launch the measurement process in TDC B
 		start_read_b,					// Control signal to start the data downloading process in TDC B
 		clr_sys_reg,					// The signal to reset the bit<1>, TDC_config, of global register 0x01 at the end of TDCs configuration
@@ -56,6 +62,12 @@ module cemf_module_64ch_fsm_average #(parameter N_ELECTRODES = 128) (
 	output reg start_read_a;
 	output reg start_conf_b;
 	input wire end_conf_b;
+	output reg start_static1_conf;				// Start static configuration 1
+	input wire end_static1_conf;					// End static configuration 1
+	output reg start_static2_conf;				// Start static configuration 2
+	input wire end_static2_conf;					// End static configuration 2
+	output reg start_static3_conf;				// Start static configuration 3
+	input wire end_static3_conf;					// End static configuration 3
 	output reg start_op_b;
 	output reg start_read_b;
 	output reg clr_sys_reg;
@@ -98,41 +110,47 @@ module cemf_module_64ch_fsm_average #(parameter N_ELECTRODES = 128) (
 	wire [N_ELECTRODES-1:0] prdata_config;
 
 	//States codification
-	parameter 	idle		= 6'b000000, //0
+	parameter 	idle			= 6'b000000, //0
 			conf_a_st		= 6'b000001, //1
 			wait_conf_a		= 6'b000010, //2
 			conf_b_st		= 6'b000011, //3
 			wait_conf_b		= 6'b000100, //4
 			end_conf_st		= 6'b000101, //5
-			init_st			= 6'b000110, //6
-			next_seq_st		= 6'b000111, //7
-			wait_st_1		= 6'b001000, //8
-			wait_read_op1	= 6'b001001, //9			
-			read_op1		= 6'b001010, //10
-			wait_st_3		= 6'b001011, //11
-			wait_st_4		= 6'b001100, //12
-			wait_read_op4	= 6'b001101, //13
-			read_op4		= 6'b001110, //14
-			wait_st_5		= 6'b001111, //15
-			wait_st_6		= 6'b010000, //16
-			wait_for_sr		= 6'b010001, //17, I have to change the numbers in order them to be adequate
-			start_st 		= 6'b010010, //18
-			sync_st			= 6'b010011, //19
-			first_channel	= 6'b010100, //20
-			normal_channel	= 6'b010101, //21
-			en_counters		= 6'b010110, //22
-			wait_st			= 6'b010111, //23
-			start_gen_st	= 6'b011000, //24
-			wait_cemf_st	= 6'b011001, //25
-			stop_gen_st		= 6'b011010, //26
-			update_addr		= 6'b011011, //27
-			end_st			= 6'b011100, //28
-			end_st_2		= 6'b011101, //29
-			end_st_3		= 6'b011110, //30
-			end_st_4		= 6'b011111, //31
-			last_read_st	= 6'b010000, //32
-			end_st_5		= 6'b100001, //33
-			end_st_6		= 6'b100010, //34
+			conf_static1_st	= 6'b000110, //6
+			wait_conf_static1	= 6'b000111, //7
+			conf_static2_st	= 6'b001000, //8
+			wait_conf_static2	= 6'b001001, //9
+			conf_static3_st	= 6'b001010, //10
+			wait_conf_static3	= 6'b001011, //11
+			init_st			= 6'b001100, //12
+			next_seq_st		= 6'b001101, //13
+			wait_st_1		= 6'b001110, //14
+			wait_read_op1		= 6'b001111, //15			
+			read_op1		= 6'b010000, //16
+			wait_st_3		= 6'b010001, //17,
+			wait_st_4		= 6'b010010, //18
+			wait_read_op4		= 6'b010011, //19
+			read_op4		= 6'b010100, //20
+			wait_st_5		= 6'b010101, //21
+			wait_st_6		= 6'b010110, //22
+			wait_for_sr		= 6'b010111, //23
+			start_st 		= 6'b011000, //24
+			sync_st			= 6'b011001, //25
+			first_channel		= 6'b011010, //26
+			normal_channel		= 6'b011011, //27
+			en_counters		= 6'b011100, //28
+			wait_st			= 6'b011101, //29
+			start_gen_st		= 6'b011110, //30
+			wait_cemf_st		= 6'b011111, //31
+			stop_gen_st		= 6'b010000, //32
+			update_addr		= 6'b100001, //33
+			end_st			= 6'b100010, //34
+			end_st_2		= 6'b100011, //35
+			end_st_3		= 6'b100100, //36
+			end_st_4		= 6'b100101, //37
+			last_read_st		= 6'b100110, //38
+			end_st_5		= 6'b100111, //39
+			end_st_6		= 6'b101000, //40
 			default_st		= 6'bxxxxxx;
 
 	// Internal registers and nerts
@@ -211,6 +229,9 @@ module cemf_module_64ch_fsm_average #(parameter N_ELECTRODES = 128) (
 	always @(c_state,
 			end_conf_a,
 			end_conf_b,
+			end_static1_conf,
+			end_static2_conf,
+			end_static3_conf,
 			cemf_in,
 			cemf_cnt,
 			data_system_o,
@@ -247,6 +268,9 @@ module cemf_module_64ch_fsm_average #(parameter N_ELECTRODES = 128) (
 			en_fe = 1'b0;
 			start_conf_a = 1'b0;
 			start_conf_b = 1'b0;
+			start_static1_conf = 1'b0;
+			start_static2_conf = 1'b0;
+			start_static3_conf = 1'b0;
 			start_op_a = 1'b0;
 			start_op_b = 1'b0;
 			start_read_a = 1'b0;
@@ -340,8 +364,63 @@ module cemf_module_64ch_fsm_average #(parameter N_ELECTRODES = 128) (
 						stop_fpga2 = 1'b1;
 						clr_sys_reg =1'b1;
 						//Next state
-						n_state = idle;
+						n_state = conf_static1_st;
 					end
+					
+				conf_static1_st:
+					begin
+						// Internal and output signals
+						start_static1_conf = 1'b1;
+						//Next state
+						n_state = wait_conf_static1;
+					end
+				
+				wait_conf_static1:
+					begin
+						// Internal and output signals
+						//Next state
+						if (end_static1_conf == 1'b1)
+							n_state = conf_static2_st;
+						else
+							n_state = c_state;
+					end
+
+				conf_static2_st:
+					begin
+						// Internal and output signals
+						start_static2_conf = 1'b1;
+						//Next state
+						n_state = wait_conf_static2;
+					end
+				
+				wait_conf_static2:
+					begin
+						// Internal and output signals
+						//Next state
+						if (end_static2_conf == 1'b1)
+							n_state = conf_static3_st;
+						else
+							n_state = c_state;
+					end
+				
+				conf_static3_st:
+					begin
+						// Internal and output signals
+						start_static3_conf = 1'b1;
+						//Next state
+						n_state = wait_conf_static3;
+					end
+				
+				wait_conf_static3:
+					begin
+						// Internal and output signals
+						//Next state
+						if (end_static3_conf == 1'b1)
+							n_state = idle;
+						else
+							n_state = c_state;
+					end
+
 				
 				init_st:
 					begin
